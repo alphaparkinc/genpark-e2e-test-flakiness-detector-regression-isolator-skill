@@ -1,0 +1,35 @@
+{
+  "name": "genpark-e2e-test-flakiness-detector-regression-isolator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Autonomous end-to-end test flakiness detector & regression root cause isolator.",
+  "author": "genpark",
+  "category": "developer",
+  "tags": [
+    "test-flakiness",
+    "regression-isolator",
+    "e2e-testing",
+    "qa-stability",
+    "ph-august-dev"
+  ],
+  "inputs": {
+    "test_run_history": {
+      "type": "array"
+    },
+    "flakiness_threshold_pct": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "flaky_tests_isolated": {
+      "type": "array"
+    },
+    "root_cause_diagnosis": {
+      "type": "string"
+    },
+    "stability_score": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
